@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>URL QR Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="top-bar">
+      <div class="lang-switch">
+        <button type="button" id="lang-zh" class="lang-btn active" data-lang="zh">中文</button>
+        <button type="button" id="lang-en" class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+
+    <h1 data-i18n="title"></h1>
+    <p class="subtitle" data-i18n="subtitle"></p>
+
+    <form id="qr-form">
+      <label for="url-input" data-i18n="urlLabel"></label>
+      <input
+        id="url-input"
+        type="text"
+        autocomplete="off"
+      />
+
+      <div class="field-row">
+        <div class="field">
+          <label for="color-dark" data-i18n="colorDarkLabel"></label>
+          <input type="color" id="color-dark" value="#000000" />
+        </div>
+        <div class="field">
+          <label for="color-light" data-i18n="colorLightLabel"></label>
+          <input type="color" id="color-light" value="#ffffff" />
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="size-input" data-i18n="sizeLabel"></label>
+          <input
+            id="size-input"
+            type="number"
+            min="150"
+            max="600"
+            step="50"
+            value="300"
+          />
+        </div>
+      </div>
+
+      <button type="submit" id="generate-btn" data-i18n="generateBtn"></button>
+    </form>
+
+    <p id="message" class="message"></p>
+
+    <div id="result" class="result hidden">
+      <h2 data-i18n="resultTitle"></h2>
+      <p id="final-url" class="final-url"></p>
+      <img id="qr-image" alt="QR Code" />
+      <a id="download-link" download="qrcode.png" data-i18n="downloadText"></a>
+
+      <div class="logo-area">
+        <label for="logo-input" data-i18n="logoLabel"></label>
+        <input type="file" id="logo-input" accept="image/*" />
+        <button type="button" id="apply-logo-btn" data-i18n="applyLogoBtn"></button>
+      </div>
+    </div>
+
+    <canvas id="qr-canvas" class="hidden"></canvas>
+
+    <footer>
+      <span data-i18n="footer"></span>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

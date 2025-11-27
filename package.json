@@ -1,0 +1,26 @@
+{
+  "name": "qr-bilingual-site",
+  "version": "1.0.0",
+  "description": "Bilingual (ZH/EN) URL to QR code web app with color, size, and logo overlay",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "qr",
+    "qrcode",
+    "express",
+    "bilingual",
+    "i18n"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
