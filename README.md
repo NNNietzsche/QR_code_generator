@@ -3,8 +3,8 @@
 A lightweight and customizable web application for generating QR codes from any URL.  
 一个轻量、可定制化的二维码生成工具，可从任意 URL 生成二维码。
 
-Supports bilingual UI (Chinese & English), color customization, adjustable size, logo embedding, and one-click download.  
-支持中英双语界面、颜色自定义、尺寸调节、LOGO 嵌入、二维码下载等功能。
+Supports bilingual UI (Chinese & English), color customization, adjustable size and one-click download.  
+支持中英双语界面、颜色自定义、尺寸调节、二维码下载等功能。
 
 Built with **Node.js + Express** and a modern, responsive UI.  
 基于 **Node.js + Express**，并采用现代响应式界面设计。
