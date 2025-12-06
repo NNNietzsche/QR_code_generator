@@ -12,7 +12,7 @@ Supports bilingual UI (Chinese & English), color customization, adjustable size 
 Built with **Node.js + Express** and a modern, responsive UI.  
 基于 **Node.js + Express**，并采用现代响应式界面设计。
 
-<img alt="a" src="https://github.com/user-attachments/assets/9a1eb8ac-be36-4aea-b60e-e96567d2667d"　width="45%" />
+<img alt="a" src="https://github.com/user-attachments/assets/9a1eb8ac-be36-4aea-b60e-e96567d2667d" width="45%"/>
 <img width="1440" height="811" alt="b" src="https://github.com/user-attachments/assets/3ad22cb3-65f6-43bb-8330-49603d8aca5d" width="45%"/>
 
 ---
